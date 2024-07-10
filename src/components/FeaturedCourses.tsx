@@ -28,9 +28,9 @@ function FeaturedCourses() {
       </div>
       <div className="mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-            {featuredCourses.map((course:course) => (
+            {featuredCourses.map((course:course,index) => (
                 <div  
-                key={course.id}
+                key={index}
                 className="flex justify-center">
                     <BackgroundGradient
                     className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
